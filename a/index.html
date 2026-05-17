@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasrib Academy</title>
+  <style>
+   body {background-color: #950644;} *{margin:0;padding:0;box-sizing:border-box}.hero{position:relative}.hero__img{position:absolute;left:50%;top:32%;transform:translate(-50%,-50%);max-width:390px;width:100%;height:auto}.hero__container{padding-top:11px;background-color:#950644;max-width:390px;margin-left:auto;margin-right:auto;padding-left:10px;padding-right:10px;padding-bottom:50px}.hero__top{max-width:342px;width:100%;margin-left:auto;margin-right:auto;background-color:#FFF;border-radius:5px;padding:5px 12px;display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.hero__top__row{display:flex;align-items:center;gap:8px}.hero__top__row__text{font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:27.9px;text-align:center}.hero__title{font-family:BarlowCondensed,sans-serif;font-weight:700;font-size:clamp(32px, 7vw, 36px);line-height:100%;text-align:center;text-transform:uppercase;color:#fff;margin-bottom:42px}.logo{max-width:230px;width:100%;height:auto;margin-left:auto;margin-right:auto;display:flex;position:relative;z-index:3}.hero__inner{position:relative;padding-bottom:46px}.btn__wraper{position:relative;z-index:5;width:min(358px, 100%);height:100px;margin:-18px auto 0}.btn{position:absolute;inset:0;top:12%;z-index:2;width:100%;height:72px;border:0;background:#fff0;color:#c40f58;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:BarlowCondensed,sans-serif;font-size:34px;font-weight:700;font-style:normal;line-height:1;letter-spacing:.03em;text-align:center;text-transform:uppercase;text-shadow:0 1px 0 rgb(255 255 255 / .35)}.btn__img{position:absolute;inset:0;z-index:1;width:100%;height:100%;display:block;pointer-events:none}.hero__flex{position:absolute;left:50%;bottom:10px;z-index:6;display:flex;align-items:center;gap:6px;transform:translateX(-50%);color:#fff}.hero__flex__text{font-family:Inter,sans-serif;font-weight:400;font-size:12px;line-height:1;white-space:nowrap}.arrow{width:31px;height:31px;display:block}.timer-container{margin-top:16px;margin-bottom:16px}.timer{font-family:BarlowCondensed,sans-serif;font-weight:700;font-size:32px;line-height:100%;text-align:center;color:#fff}.hero__bottom{max-width:311px;width:100%;margin-left:auto;margin-right:auto;padding:18px 15px 16px;background-color:#fff;border-radius:13px}.hero__bottom__title{margin-bottom:16px;font-family:Inter,sans-serif;font-weight:800;font-size:clamp(22px, 5vw, 23px);line-height:1;letter-spacing:0;text-align:center;text-transform:uppercase;color:#c40f58}.hero__bottom__row{display:flex;align-items:flex-start;gap:5px}.hero__bottom__row:not(:last-child){margin-bottom:10px}.hero__bottom__row img{flex:0 0 16px;width:16px;height:16px;margin-top:1px}.hero__bottom__row__text{font-family:Inter,sans-serif;font-weight:400;font-size:14px;line-height:1.15;color:#000}.hero__bottom__row__text b{font-weight:700}
+  </style>
+  <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="./css/main.css" />
+  </noscript>
+
+</head>
+
+<body>
+
+  <section class="hero">
+    <img src="./images/hero__img.avif" width="408" height="630" loading="lazy" decoding="async" alt="HeroImg" class="hero__img">
+    <div class="hero__container">
+      <div class="hero__top">
+        <div class="hero__top__row">
+          <img src="./images/calendar.svg" width="20" height="20" loading="lazy" alt="Calendar icon">
+          <p class="hero__top__row__text">25–26-May</p>
+        </div>
+        <div class="hero__top__row">
+          <img src="./images/clock.svg" width="20" height="20" loading="lazy" alt="Clock icon">
+          <p class="hero__top__row__text">Soat 20:30</p>
+        </div>
+      </div>
+      <h2 class="hero__title">
+        Qanday qilib arab tilini <br> 0 dan oson va tez <br>
+        o'rganish mumkin?
+      </h2>
+      <div class="hero__inner">
+        <img src="./images/logo.avif" width="260" height="351" loading="lazy" decoding="async" alt="Logo" class="logo">
+        <div class="btn__wraper">
+          <button class="btn registerBtn">bepul qatnashish</button>
+          <img src="./images/btn.svg" width="358" height="100" loading="lazy" decoding="async" alt="btnImg"
+            class="btn__img">
+        </div>
+        <div class="hero__flex">
+          <p class="hero__flex__text">Bepul qatnashish uchun</p>
+          <img src="./images/arrow.svg" width="31" height="31" loading="lazy" decoding="async" alt="arrowImg"
+            class="arrow">
+        </div>
+      </div>
+      <div class="timer-container">
+        <p class="timer" id="timer">00:00</p>
+      </div>
+      <div class="hero__bottom">
+        <h2 class="hero__bottom__title">BEPUL DARSDA SIZ:</h2>
+        <div class="hero__bottom__row">
+          <img src="./images/star.svg" width="24" height="24" loading="lazy" decoding="async" alt="starImg">
+          <p class="hero__bottom__row__text">Nega ko‘pchilik <b>arab tilini boshlab,</b> <br> lekin davom ettira olmaydi</p>
+        </div>
+        <div class="hero__bottom__row">
+          <img src="./images/star.svg" width="24" height="24" loading="lazy" decoding="async" alt="starImg">
+          <p class="hero__bottom__row__text">Arab tilini o‘rganish uchun <br> <b>amaliy metodlar</b></p>
+        </div>
+        <div class="hero__bottom__row">
+          <img src="./images/star.svg" width="24" height="24" loading="lazy" decoding="async" alt="starImg">
+          <p class="hero__bottom__row__text">Qur’onga muhabbatingizni <br> oshiradigan <b>4 eng muhim tavsiya</b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="registrationModal" class="homeModal" style="display: none">
+    <div class="homeModalOverlay"></div>
+    <div class="homeFormContainer">
+      <button class="closeButton" id="closeModalBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+          <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+      <div class="homeFormTop">
+        <h1 class="homeFormTopTitle">
+          Ro'yxatdan o'tish uchun <br> ma'lumotlaringizni kiriting!
+        </h1>
+      </div>
+      <form id="registrationForm" name="contact-form">
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="name">Ismingiz:</label>
+          <input class="HomeFormRowInput" type="text" id="name" name="name" placeholder="Ismingizni kiriting"
+            autocomplete="name" />
+          <p class="homeFormErrorText" id="nameError" style="display: none">❌ Ismingizni kiriting!</p>
+        </div>
+
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
+          <div class="phone-input-container">
+            <button type="button" class="selected-country" id="selectedCountry">
+              <div id="selectedCountryFlag" style="display: flex; align-items: center;"></div>
+              <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              <span class="selected-code" id="selectedCountryCodeText">+998</span>
+            </button>
+            <div class="country-dropdown" id="countryDropdown" style="display:none"></div>
+            <div class="phone-field" style="flex: 1;">
+              <input class="HomeFormRowInput phone-input" type="tel" id="phone" name="phone" inputmode="numeric"
+                placeholder="88 888 88 88" autocomplete="tel"
+                style="border: none; background-color: transparent; padding-left: 5px; width: 100%;" />
+            </div>
+          </div>
+          <p class="homeFormErrorText" id="phoneError" style="display:none">❌ Telefon raqam mos emas!</p>
+        </div>
+
+        <div class="HomeFormBtnWrapper">
+          <button type="submit" class="HomeFormBtn" id="submitBtn">Bepul qatnashish</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script defer src="/js/phoneFormatter.js"></script>
+  <script defer src="/js/app.js"></script>
+
+
+</body>
+
+</html>
